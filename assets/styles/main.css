@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background-image: url('../images/bg-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    background-color: #684BB1;
+}
+
+.navigation {
+    margin: 0;
+    padding: 64px 85px 40px 80px;
+}
+
+.navigation > img {
+    display: block;
+    margin: 0;
+    margin-left: -41px;
+    padding: 0;
+}
+
+.main-wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 493px;
+    margin: 0;
+    margin-bottom: 27px;
+    padding: 0px 85px 0px 78px;
+    justify-content: center;
+    align-items: center;
+}
+
+.illustration {
+    margin: 0;
+    padding: 0;
+    margin-right: 59px;
+}
+
+.illustration > img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.text > h1 {
+    max-width: 498px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    color: #FFFFFF;
+}
+
+.text > p {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
+    max-width: 520px;
+    margin: 0;
+    margin: 24px 0px;
+}
+
+.text > button {
+    background: #FFFFFF;
+    box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.258633);
+    border-radius: 28px;
+    height: 56px;
+    width: 200px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #684BB1;
+    transition: 0.3s ease-in;
+}
+
+.text > button:hover {
+    background: #E880E8;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 85px;
+}
+
+.footer > button {
+    width: 40px;
+    height: 40px;
+    border: 1.17647px solid #FFFFFF;
+    background: transparent;
+    border-radius: 50%;
+    margin-left: 16px;
+    transition: 0.3s ease-in;
+}
+
+.footer > button > i {
+    color: #FFFFFF;
+    transition: 0.3s ease-in;
+}
+
+.footer > button:hover {
+    border: 1.17647px solid #FF52C1;
+    cursor: pointer;
+}
+
+.footer > button:hover > i {
+    color: #FF52C1;
+}
+
+@media (max-width: 450px) {
+    body {
+        background-image: url('../images/bg-mobile.svg');
+    }
+
+    .illustration {
+        margin-left: 35px;
+    }
+    
+    .text > h1 {
+        font-size: 24px;
+        max-width: 280px;
+        line-height: 36px;
+        margin-bottom: 16px;
+    }
+
+    .text > p {
+        font-size: 16px;
+        max-width: 304px;
+    }
+
+    .text > button {
+        height: 40px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1080px) {
+    .main-wrapper {
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        padding: 40px;
+        justify-items: center;
+        margin-bottom: 40px;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer {
+        justify-content: center;
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+
+    .navigation {
+        padding: 64px 85px 40px 50px;
+    }
+
+    .text > h1, .text > p {
+        text-align: center;
+    }
+}
