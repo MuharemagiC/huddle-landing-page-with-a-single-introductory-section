@@ -30,7 +30,7 @@
 
 ### What I learned
 
-In this project I improved my css and html
+In this project I improved my css and html skills.
 
 ### Continued development
 
